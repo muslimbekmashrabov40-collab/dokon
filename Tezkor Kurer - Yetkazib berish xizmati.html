@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="uz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezkor Kurer - Yetkazib berish xizmati</title>
+    <link rel="stylesheet" href="./Tezkor Kurer - Yetkazib berish xizmati_files/style.css">
+    <link href="./Tezkor Kurer - Yetkazib berish xizmati_files/css2" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>🚚 Tezkor Kurer</h1>
+            <p>Ovqat, kiyim-kechak, hujjat va boshqa barcha yuklarni tez va ishonchli yetkazamiz</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Mahsulot va xizmat kategoriyalari -->
+        <section class="categories-section">
+            <h2>📦 Yo'nalish yoki mahsulot turini tanlang</h2>
+            <div class="category-grid">
+                <div class="cat-card" data-cat="Ovqat va Fast-Food" data-price="15000">
+                    <span>🍔</span>
+                    <h3>Ovqatlar (15,000 so'm)</h3>
+                </div>
+                <div class="cat-card" data-cat="Kiyim-kechak va Moda" data-price="20000">
+                    <span>👕</span>
+                    <h3>Kiyim-kechak (20,000 so'm)</h3>
+                </div>
+                <div class="cat-card" data-cat="Hujjat va Pochta" data-price="12000">
+                    <span>📄</span>
+                    <h3>Hujjatlar (12,000 so'm)</h3>
+                </div>
+                <div class="cat-card" data-cat="Texnika va Buyumlar" data-price="30000">
+                    <span>💻</span>
+                    <h3>Texnika (30,000 so'm)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buyurtma formasi -->
+        <section class="form-section">
+            <h2>Kurer chaqirish formasi</h2>
+            <form id="orderForm">
+                <div class="input-group">
+                    <label>Ismingiz:</label>
+                    <input type="text" id="senderName" placeholder="To&#39;liq ismingizni kiriting" required="">
+                </div>
+
+                <div class="input-group">
+                    <label>Telefon raqamingiz:</label>
+                    <input type="tel" id="senderPhone" placeholder="+998 90 123 45 67" required="">
+                </div>
+
+                <div class="input-group">
+                    <label>Qayerdan (Olish manzili):</label>
+                    <input type="text" id="pickupAddress" placeholder="Ko&#39;cha, uy raqami" required="">
+                </div>
+
+                <div class="input-group">
+                    <label>Qayerga (Yetkazish manzili):</label>
+                    <input type="text" id="deliveryAddress" placeholder="Manzilni kiriting" required="">
+                </div>
+
+                <div class="input-group">
+                    <label>Yuk tavsifi:</label>
+                    <input type="text" id="packageDesc" placeholder="Masalan: Burger, 1kg kiyim va hokazo" required="">
+                </div>
+
+                <div class="input-group">
+                    <label>Kurer uchun izoh / Eslatma:</label>
+                    <input type="text" id="orderNote" placeholder="Masalan: 3-qavat, eshik qo&#39;ng&#39;irog&#39;i ishlamaydi">
+                </div>
+
+                <div class="input-group">
+                    <label>Yetkazib berish turi:</label>
+                    <select id="deliveryType">
+                        <option value="15000">Oddiy (15,000 so'm)</option>
+                        <option value="25000">Tezkor Express (25,000 so'm)</option>
+                        <option value="40000">VIP / Kechasi (40,000 so'm)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>To'lov turi:</label>
+                    <select id="paymentType">
+                        <option value="Naqd pul">Kurerga naqd pulda 💵</option>
+                        <option value="Karta orqali">Karta orqali (O'tkazma) 💳</option>
+                    </select>
+                </div>
+
+                <div class="price-box">
+                    <span>Narx: </span><strong id="displayPrice">15,000 so'm</strong>
+                </div>
+
+                <button type="submit" id="submitBtn">Buyurtma berish 🚀</button>
+            </form>
+        </section>
+
+        <!-- Mijozlar sharhlari bo'limi -->
+        <section class="reviews-section">
+            <h2>💬 Mijozlarimiz fikrlari</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p>"Juda tez yetkazishdi, ovqat issiqligicha keldi. Rahmat!"</p>
+                    <h4>— Jasur B. ⭐⭐⭐⭐⭐</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Hujjatlarimni vaqtida, o'z egasiga bexato eltib berishdi. Ishonchli!"</p>
+                    <h4>— Dilshod K. ⭐⭐⭐⭐⭐</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tezkor Savol-Javoblar (FAQ) bo'limi -->
+        <section class="faq-section">
+            <h2>❓ Ko'p beriladigan savollar</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>Yukim xavfsiz yetib boradimi?</h3>
+                    <p>Ha, barcha jo'natmalarimiz to'liq kafolatlangan va tajribali kurerlar tomonidan yetkaziladi.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>To'lovni qanday amalga oshiraman?</h3>
+                    <p>Buyurtmani qabul qilib olayotganda kurerga naqd pulda yoki karta raqamiga o'tkazma orqali to'lashingiz mumkin.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Karta orqali to'lov qilish uchun maxsus bo'lim -->
+        <section class="card-payment-section">
+            <div class="card-box">
+                <div class="card-icon">💳</div>
+                <div class="card-info">
+                    <h3>Karta orqali to'lov uchun</h3>
+                    <p>Buyurtma uchun quyidagi karta raqamiga o'tkazma qilishingiz mumkin:</p>
+                    <div class="card-number">4916 9903 4109 8207</div>
+                    <small>O'tkazma qilgandan so'ng chekni botga yuboring:</small>
+                    
+                    <!-- Animatsiyali bot tugmasi -->
+                    <a href="https://t.me/kurer_uz_bot" target="_blank" class="bot-animated-btn">
+                        🤖 @kurer_uz_bot ga o'tish
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SAYT TAGI (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <p>Biz bilan bog'lanish:</p>
+            <div class="social-links">
+                <a href="https://t.me/Muslimjon890" target="_blank" class="social-btn telegram">
+                    ✈️ Telegram: @Muslimjon890
+                </a>
+                <a href="https://instagram.com/Mashrapov_770" target="_blank" class="social-btn instagram">
+                    📸 Instagram: Mashrapov_770
+                </a>
+            </div>
+            <p class="copyright">© 2026 Tezkor Kurer. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- Suzuvchi tezkor aloqa tugmasi -->
+    <a href="tel:+998943248308" class="float-btn" title="Qo&#39;ng&#39;iroq qilish">
+        📞
+    </a>
+
+    <!-- Buyurtma muvaffaqiyatli ketganda chiqadigan chiroyli oyna (Popup Modal) -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="success-icon">🎉</div>
+            <h2>Buyurtmangiz qabul qilindi!</h2>
+            <p>Buyurtma raqami: <strong id="modalOrderId">#0000</strong></p>
+            <p class="est-time">⏱ Taxminiy yetib borish vaqti: <strong>30-40 daqiqa</strong></p>
+            <button id="closeModalBtn">Tushunarli 👍</button>
+        </div>
+    </div>
+
+    <script src="./Tezkor Kurer - Yetkazib berish xizmati_files/script.js.загрузка"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<meta name="description" content="Tezkor Kurer - Toshkent bo&#39;ylab yuklarni tez va ishonchli yetkazib berish xizmati.">
+<meta name="keywords" content="kurer, yetkazib berish, toshkent, tezkor xizmat"></body></html>
